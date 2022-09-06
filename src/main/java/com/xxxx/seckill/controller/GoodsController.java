@@ -23,7 +23,7 @@ import javax.servlet.http.HttpSession;
  * @Author: ChenQ
  * @Date: 2022/9/5 on 21:35
  */
-@RestController
+@Controller
 @RequestMapping("/goods")
 public class GoodsController {
     @Autowired
@@ -43,7 +43,7 @@ public class GoodsController {
 //        }
         model.addAttribute("user",user);
         model.addAttribute("goodsList",goodsService.findGoodsVo());
-        return "goodList";
+        return "goodsList";
     }
 
 }

@@ -1,6 +1,7 @@
 package com.xxxx.seckill.vo;
 
 import com.xxxx.seckill.pojo.Goods;
+import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -12,6 +13,8 @@ import java.util.Date;
  * @Author: ChenQ
  * @Date: 2022/9/6 on 22:40
  */
+
+@Data
 public class GoodsVo extends Goods {
 
     /**
