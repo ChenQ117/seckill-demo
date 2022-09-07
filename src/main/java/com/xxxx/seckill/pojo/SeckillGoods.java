@@ -23,6 +23,7 @@ public class SeckillGoods implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    private Long id;
     /**
      * 商品ID
      */
