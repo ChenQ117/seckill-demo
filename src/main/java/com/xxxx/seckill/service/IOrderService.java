@@ -6,6 +6,7 @@ import com.xxxx.seckill.pojo.Order;
 import com.xxxx.seckill.pojo.SeckillOrder;
 import com.xxxx.seckill.pojo.User;
 import com.xxxx.seckill.vo.GoodsVo;
+import com.xxxx.seckill.vo.OrderDetailVo;
 
 /**
  * <p>
@@ -24,4 +25,11 @@ public interface IOrderService extends IService<Order> {
      * @return
      */
     Order secKill(User user, GoodsVo goodsVo);
+
+    /**
+     * 订单详情
+     * @param orderId
+     * @return
+     */
+    OrderDetailVo detail(Long orderId);
 }
