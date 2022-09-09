@@ -1,6 +1,7 @@
 package com.xxxx.seckill.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.xxxx.seckill.config.UserContext;
 import com.xxxx.seckill.exception.GlobalException;
 import com.xxxx.seckill.mapper.UserMapper;
 import com.xxxx.seckill.pojo.User;
@@ -68,10 +69,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
         //将用户信息存入redis中
         redisTemplate.opsForValue().set("user:"+ticket,user);
-
 //        request.getSession().setAttribute(ticket,user);
         CookieUtil.setCookie(request,response,"userTicket",ticket);
-
         return RespBean.success(ticket);
     }
 

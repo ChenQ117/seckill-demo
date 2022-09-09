@@ -41,5 +41,6 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver {
             return null;
         }
         return userService.getUserByCookie(ticket,request,response);
+//        return UserContext.getUser();
     }
 }

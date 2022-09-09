@@ -36,18 +36,18 @@ public class UserController {
     /**
      * 测试发送消息
      */
-    @RequestMapping("/mq")
-    @ResponseBody
-    public void mq(){
-        mqSender.send("发送消息成功");
-    }
-
-    /**
-     * fanout模式测试
-     */
-    @RequestMapping("/mq/fanout")
-    @ResponseBody
-    public void mq01(){
-        mqSender.send("发送消息成功");
-    }
+//    @RequestMapping("/mq")
+//    @ResponseBody
+//    public void mq(){
+//        mqSender.send("发送消息成功");
+//    }
+//
+//    /**
+//     * fanout模式测试
+//     */
+//    @RequestMapping("/mq/fanout")
+//    @ResponseBody
+//    public void mq01(){
+//        mqSender.send("发送消息成功");
+//    }
 }
