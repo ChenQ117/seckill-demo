@@ -211,7 +211,7 @@ public class SecKillController implements InitializingBean {
     }
 
     /**
-     * 验证码
+     * 生成验证码
      * @param user
      * @param goodsId
      * @param response
